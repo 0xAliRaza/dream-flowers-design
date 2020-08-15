@@ -3,9 +3,14 @@
     Primary Color: #FC427B 
     Primary Color dark: #fb2164 
 
-
 */
 
+/* ---------------------------------------------- */
+/* BASIC STRUCTURE */
+/* ---------------------------------------------- */
+a:hover {
+	text-decoration: none;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -13,24 +18,76 @@
 }
 html,
 body {
+	line-height: 1.15 !important;
 	font-family: 'Lato', sans-serif;
 	height: 100%;
 	background-color: #fff;
 	color: #555555;
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 400;
 	text-rendering: optimizeLegibility;
 }
 
+section {
+	margin-top: 80px;
+}
+
+/* ---------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------------------- */
+
+.section-subtitle {
+	line-height: 1.5;
+	width: 70%;
+	margin: 0 0 30px 15%;
+}
+
+.icon-big {
+	font-size: 3.5rem;
+	color: #fc427b;
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* box */
+.box {
+	margin: 1% 0;
+	padding: 1%;
+}
+.box-text {
+	font-size: 1rem;
+	line-height: 1.4;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+/* buttons */
 .btn {
+	line-height: 1.5!important;
 	font-weight: 300;
 	padding: 7px 30px;
 	border-radius: 200px;
 	transition: background-color 0.5s, color 0.5s, border 0.5s;
 	outline: none !important;
-    box-shadow: none !important;
-    margin-right: 15px;
+	box-shadow: none !important;
+	margin-right: 15px;
 }
+
+.btn-small {
+	line-height: 1.4!important;
+	display: inline-block;
+	font-weight: 300;
+	padding: 7px 20px;
+	border-radius: 200px;
+	transition: background-color 0.5s, color 0.5s, border 0.5s;
+	outline: none !important;
+	box-shadow: none !important;
+	margin: 0 auto 10px;
+
+}
+
+
+/* Filled button */
 .btn-full,
 .btn-full:visited {
 	color: #fff;
@@ -43,8 +100,7 @@ body {
 	border: 1px solid #fb2164;
 }
 
-
-
+/* Transparent button */
 .btn-ghost,
 .btn-ghost:visited {
 	color: #fc427b;
@@ -53,23 +109,96 @@ body {
 }
 .btn-ghost:hover,
 .btn-ghost:active {
-    color: #fff;
+	color: #fff;
 	background-color: #fb2164;
 	border: 1px solid #fb2164;
 }
 
+/* Headings */
 
+h1,
+h2,
+h3 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
 
+h1 {
+	font-weight: 300;
+	margin-bottom: 15px;
+	color: #fff;
+	font-size: 2.4rem;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+}
 
+h2 {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 1.8rem;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+}
+h2::after {
+	display: block;
+	content: ' ';
+	width: 100px;
+	height: 2px;
+	background-color: #fc427b;
+	margin: 30px auto 0;
+}
 
+h3 {
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+}
 
+/* ---------------------------------------------- */
+/* HEADER */
+/* ---------------------------------------------- */
 
+/* top navbar */
+nav {
+	margin-top: 35px;
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 
+nav .nav-item {
+	margin-left: 40px;
+}
 
+nav li a:link,
+li a:visited {
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s;
+	padding: 8px 0px !important;
+	font-size: 0.9em;
+	font-weight: 400;
+	color: #fff !important;
+	text-transform: uppercase;
+}
 
+nav li a:hover,
+li a:active {
+	border-bottom: 2px solid #fc427b;
+}
 
+.logo:link,
+.logo:visited {
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	color: #fff;
+	/* border: 1px solid #cccccc; */
+	border: 1px solid #fc427b;
+	padding: 7px 2px;
+}
 
-
+/* header content */
 header {
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)),
@@ -79,31 +208,20 @@ header {
 	background-attachment: fixed;
 }
 
-header nav {
-    position: absolute;
-    top: 0;
-    height: 100px!important;
-}
-
-.hero {
+header .hero {
 	position: relative;
 	height: 100%;
 	display: flex;
 }
-.hero .hero-text-box {
+
+.hero-text-box {
 	margin: auto 0;
 }
-.hero .hero-text-box h1 {
-    margin-bottom: 15px;
-	color: #fff;
-	font-weight: 300;
-	font-size: 2.4rem;
-	text-transform: uppercase;
-}
 
-nav {
-	position: absolute !important;
-	top: 0;
-	left: 0;
-	width: 100%;
+/* ---------------------------------------------- */
+/* SERVICES */
+/* ---------------------------------------------- */
+
+.section-services .box .btn-anchor {
+	/* margin-top: -10px; */
 }
