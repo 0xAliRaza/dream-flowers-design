@@ -29,7 +29,7 @@ body {
 }
 
 section {
-	margin-top: 80px;
+	padding: 80px 0;
 }
 
 /* ---------------------------------------------- */
@@ -63,7 +63,6 @@ section {
 
 /* buttons */
 .btn {
-	line-height: 1.5!important;
 	font-weight: 300;
 	padding: 7px 30px;
 	border-radius: 200px;
@@ -74,8 +73,8 @@ section {
 }
 
 .btn-small {
-	line-height: 1.4!important;
 	display: inline-block;
+	line-height: 1.4;
 	font-weight: 300;
 	padding: 7px 20px;
 	border-radius: 200px;
@@ -83,9 +82,7 @@ section {
 	outline: none !important;
 	box-shadow: none !important;
 	margin: 0 auto 10px;
-
 }
-
 
 /* Filled button */
 .btn-full,
@@ -219,9 +216,46 @@ header .hero {
 }
 
 /* ---------------------------------------------- */
-/* SERVICES */
+/* GALLERY */
 /* ---------------------------------------------- */
 
-.section-services .box .btn-anchor {
-	/* margin-top: -10px; */
+.section-gallery {
+	padding: 0;
+}
+.gallery-box {
+	display: block;
+	background-color: #000;
+	overflow: hidden;
+}
+.gallery-box img {
+	transform: scale(1.15);
+	opacity: 0.7;
+	transition: transform 0.5s, opacity 0.5s;
+}
+.gallery-box img:hover {
+	cursor: pointer;
+	transform: scale(1);
+	opacity: 1;
+}
+
+
+/* ---------------------------------------------- */
+/* FEATURED PRODUCTS */
+/* ---------------------------------------------- */
+.product-section .product-box:hover {
+	cursor: pointer;
+	box-shadow:  0 1px 6px rgba(0,0,0,.3);
+}
+.product-section .product-box img {
+	margin-bottom: 10px;
+}
+.product-section .product-title {
+	font-size: 0.9rem;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+.product-section .product-price span {
+	color: #fc427b;
+	font-size: 1rem;
+	font-weight: 400;
 }
