@@ -199,7 +199,7 @@ li a:active {
 header {
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)),
-		url(img/hero-bg-2.jpg);
+		url(img/hero-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -258,4 +258,45 @@ header .hero {
 	color: #fc427b;
 	font-size: 1rem;
 	font-weight: 400;
+}
+
+
+/* ---------------------------------------------- */
+/* TESTIMONIALS */
+/* ---------------------------------------------- */
+.section-testimonials {
+	padding: 0;
+	height: 50vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/testimonials-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#testimonials .carousel-item {
+	height: 100%;
+	color: #f7f7f7;
+	font-weight: 400;
+	font-size: 1.1rem;
+}
+#testimonials .carousel-item div {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+#testimonials .carousel-item img {
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+	margin-bottom: 20px;
+}
+
+
+#testimonials .carousel-item blockquote{
+	position: relative;
+	margin: 0 auto 20px;
+	line-height: 1.4;
+	max-width: 700px;
+	font-weight: 300;
 }
