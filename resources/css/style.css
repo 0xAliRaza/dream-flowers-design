@@ -49,6 +49,14 @@ section {
 	margin-bottom: 10px;
 }
 
+.icon-small {
+	display: inline-block;
+	color: #fc427b;
+	font-size: 1.2rem;
+	margin: -5px 5px 0 0;
+	vertical-align: middle;
+}
+
 /* box */
 .box {
 	margin: 1% 0;
@@ -63,6 +71,7 @@ section {
 
 /* buttons */
 .btn {
+	display: inline-block;
 	font-weight: 300;
 	padding: 7px 30px;
 	border-radius: 200px;
@@ -238,13 +247,20 @@ header .hero {
 	opacity: 1;
 }
 
-
 /* ---------------------------------------------- */
 /* FEATURED PRODUCTS */
 /* ---------------------------------------------- */
+.product-section {
+	background-color: #f5f4f4;
+}
+
+.product-section .product-box {
+	transition: box-shadow 0.2s;
+}
+
 .product-section .product-box:hover {
 	cursor: pointer;
-	box-shadow:  0 1px 6px rgba(0,0,0,.3);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 .product-section .product-box img {
 	margin-bottom: 10px;
@@ -260,6 +276,36 @@ header .hero {
 	font-weight: 400;
 }
 
+/* ---------------------------------------------- */
+/* CURRENT CITIES */
+/* ---------------------------------------------- */
+
+.current-cities {
+	line-height: 1.15 !important;
+	font-size: 1rem;
+}
+.current-cities .box img {
+	max-height: 250px;
+	margin-bottom: 15px;
+}
+
+.current-cities .city-feature {
+	color: #fc427b;
+	margin-bottom: 15px;
+}
+.current-cities .city-feature a,
+.current-cities .city-feature a:visited {
+	color: #fc427b;
+	text-decoration: none;
+	border-bottom: 1px solid #fc427b;
+	transition: color 0.5s, border-bottom 0.5s;
+}
+
+.current-cities .city-feature a:hover,
+.current-cities .city-feature a:active {
+	color: #fb2164;
+	border-bottom: 1px solid transparent;
+}
 
 /* ---------------------------------------------- */
 /* TESTIMONIALS */
@@ -267,12 +313,14 @@ header .hero {
 .section-testimonials {
 	padding: 0;
 	height: 50vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/testimonials-bg.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(img/testimonials-bg.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 #testimonials .carousel-item {
+	line-height: 1.4;
 	height: 100%;
 	color: #f7f7f7;
 	font-weight: 400;
@@ -292,11 +340,19 @@ header .hero {
 	margin-bottom: 20px;
 }
 
-
-#testimonials .carousel-item blockquote{
+#testimonials .carousel-item blockquote {
+	font-size: 1rem;
 	position: relative;
 	margin: 0 auto 20px;
-	line-height: 1.4;
 	max-width: 700px;
 	font-weight: 300;
+}
+
+
+/* ---------------------------------------------- */
+/* CONTACT US */
+/* ---------------------------------------------- */
+.contact iframe {
+	min-height: 50vh;
+	width: 100%;
 }
