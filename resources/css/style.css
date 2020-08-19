@@ -16,6 +16,7 @@ a:hover {
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html,
 body {
 	line-height: 1.15 !important;
@@ -31,6 +32,7 @@ body {
 section {
 	padding: 80px 0;
 }
+
 
 /* ---------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -164,7 +166,7 @@ h3 {
 /* ---------------------------------------------- */
 
 /* top navbar */
-nav {
+#navbar-top {
 	margin-top: 35px;
 	position: absolute !important;
 	top: 0;
@@ -172,11 +174,11 @@ nav {
 	width: 100%;
 }
 
-nav .nav-item {
+#navbar-top .nav-item {
 	margin-left: 40px;
 }
 
-nav li a:link,
+#navbar-top li a:link,
 li a:visited {
 	border-bottom: 2px solid transparent;
 	transition: border-bottom 0.2s;
@@ -187,7 +189,7 @@ li a:visited {
 	text-transform: uppercase;
 }
 
-nav li a:hover,
+#navbar-top li a:hover,
 li a:active {
 	border-bottom: 2px solid #fc427b;
 }
@@ -322,7 +324,7 @@ header .hero {
 #testimonials .carousel-item {
 	line-height: 1.4;
 	height: 100%;
-	color: #f7f7f7;
+	color: #ececec;
 	font-weight: 400;
 	font-size: 1.1rem;
 }
@@ -355,4 +357,39 @@ header .hero {
 .contact iframe {
 	min-height: 50vh;
 	width: 100%;
+}
+
+
+/* ---------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------- */
+
+footer {
+	padding: 50px;
+	background-color: #333333;
+	color: #888888;
+	font-size: .85rem;
+}
+
+#navbar-bottom a, #navbar-bottom a:visited {
+	color: #888888 !important;
+	transition: color 0.2s;
+}
+#navbar-bottom a:hover, #navbar-bottom a:active {
+	color: #ddd !important;
+}
+
+#navbar-bottom-icons .icon-small {
+	color: #888888 !important;
+	transition: color 0.2s;
+}
+#navbar-bottom-icons .icon-small:hover, #navbar-bottom-icons .icon-small:active {
+	color: #ddd !important;
+}
+
+
+footer .copyright-msg {
+	margin-top: 30px;
+	font-size: 0.85rem;
+	color: #888888;
 }
