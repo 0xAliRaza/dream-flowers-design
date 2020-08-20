@@ -8,26 +8,35 @@
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/media_queries.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
             rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="resources/js/script.js"></script>
         <title>Dream Flowers</title>
     </head>
 
     <body>
         <header>
             <div class="container-lg hero">
-                <nav id="navbar-top" class="navbar navbar-expand-sm navbar-dark">
-                    <a href="#" class="navbar-brand logo">DF</a>
-                    <ul class="ml-auto navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link">Quick shop</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Gift flowers</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-                    </ul>
-                </nav>
+                        <nav id="navbar-top" class="navbar navbar-expand-md navbar-dark">
+                            <a href="#" class="navbar-brand logo float-left">DF</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#topNavbarCollapsible" aria-controls="topNavbarCollapsible" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="my-2 collapse navbar-collapse" id="topNavbarCollapsible">
+                                <ul class="ml-auto navbar-nav">
+                                    <li class="nav-item"><a href="#" class="nav-link">Quick shop</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Gift flowers</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
                 <div class="hero-text-box">
                     <h1>Dreams of glory. <br>Now, fulfilled by florists.</h1>
                     <a href="#" class="btn btn-full">Shop now</a>
@@ -42,7 +51,7 @@
         <section class="section-services">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 section-header">
+                    <div class="col-lg-12 section-header">
                         <h2 class="section-title">You deserve best &mdash; We provide best</h2>
                         <p class="section-subtitle">Dream Flowers has been serving its customers since the 1970s with
                             passion
@@ -50,14 +59,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3 box">
+                    <div class="col-lg-3 col-sm-6 box">
                         <i class="ion-ios-cart icon-big"></i>
                         <h3>Shop Online</h3>
                         <p class="box-text">Our company has an award-winning reputation!
                             Harvested from our own farms our flowers are always ready to make your day special.</p>
                         <a href="#" class="btn-small btn-full">Shop now</a>
                     </div>
-                    <div class="col-sm-3 box">
+                    <div class="col-lg-3 col-sm-6 box">
                         <i class="ion-ios-heart icon-big"></i>
                         <h3>Gift Delivery</h3>
                         <p class="box-text">Are you busy to express love?
@@ -65,14 +74,14 @@
                             your beloved one’s doorstep and make their day special.</p>
                         <a href="#" class="btn-small btn-ghost">Learn more </a>
                     </div>
-                    <div class="col-sm-3 box">
+                    <div class="col-lg-3 col-sm-6 box">
                         <i class="ion-plane icon-big"></i>
                         <h3>Same day delivery</h3>
                         <p class="box-text">Our standard delivery takes 2-3 days to deliver flowers to your doorstep but
                             with S-D-D you can now get your flowers in a maximum of 5 hours.</p>
                         <a href="#" class="btn-small btn-ghost">Learn more</a>
                     </div>
-                    <div class="col-sm-3 box">
+                    <div class="col-lg-3 col-sm-6 box">
                         <i class="ion-ios-flower icon-big"></i>
                         <h3>Event Decoration</h3>
                         <p class="box-text">We provide flower decoration services for almost every kind of event, hire
@@ -89,32 +98,32 @@
         <section class="section-gallery">
             <div class="container-fluid p-0">
                 <div class="row no-gutters">
-                    <div class="col-sm-3 gallery-box">
+                    <div class="col-3 col-sm-6 col-md-3 gallery-box">
                         <img src="/resources/img/gallery-1.jpg" alt="Flower decoration in a glass" class="img-fluid">
                     </div>
-                    <div class="col-sm-3 gallery-box">
+                    <div class="col-3 col-sm-6 col-md-3 gallery-box">
                         <img src="/resources/img/gallery-2.jpg" alt="Bride holding a flower bouquet" class="img-fluid">
                     </div>
-                    <div class="col-sm-3 gallery-box">
+                    <div class="col-3 col-sm-6 col-md-3 gallery-box">
                         <img src="/resources/img/gallery-3.jpg" alt="Flower decoration over a meeting table"
                             class="img-fluid">
                     </div>
-                    <div class="col-sm-3 gallery-box">
+                    <div class="col-3 col-sm-6 col-md-3 gallery-box">
                         <img src="/resources/img/gallery-4.jpg" alt="Flowers on marriage ceremony" class="img-fluid">
                     </div>
-                    <div class="col-sm-3 gallery-box">
+                    <div class="col-3 col-sm-6 col-md-3 gallery-box">
                         <img src="/resources/img/gallery-5.jpg" alt="Bride holding a beautiful flower bouquet"
                             class="img-fluid">
                     </div>
-                    <div class="col-sm-3 gallery-box">
+                    <div class="col-3 col-sm-6 col-md-3 gallery-box">
                         <img src="/resources/img/gallery-6.jpg" alt="Groom’s car heavily decorated with flowers"
                             class="img-fluid">
                     </div>
-                    <div class="col-sm-3 gallery-box">
+                    <div class="col-3 col-sm-6 col-md-3 gallery-box">
                         <img src="/resources/img/gallery-7.jpg" alt="Marriage ceremony flower decoration"
                             class="img-fluid">
                     </div>
-                    <div class="col-sm-3 gallery-box">
+                    <div class="col-3 col-sm-6 col-md-3 gallery-box">
                         <img src="/resources/img/gallery-8.jpg" alt="Groom getting a flower in the front pocket"
                             class="img-fluid">
                     </div>
@@ -136,55 +145,55 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3 product-box box">
+                    <div class="col-sm-6 col-md-3 product-box box">
                         <img class="img-fluid"
-                            src="https://source.unsplash.com/random/260x250/?flowers,product,flourist"
+                            src="https://source.unsplash.com/random/270x250/?flowers,product,flourist"
                             alt="Featured Product">
                         <p class="product-title">Flowers in a bouqet</p>
                         <div class="product-price"><span class="currency">$</span><span class="price">10</span></div>
                     </div>
-                    <div class="col-sm-3 product-box box">
+                    <div class="col-sm-6 col-md-3 product-box box">
                         <img class="img-fluid"
-                            src="https://source.unsplash.com/random/260x250/?flower,beautiful,cute,product,flourist"
+                            src="https://source.unsplash.com/random/270x250/?flower,beautiful,cute,product,flourist"
                             alt="Featured Product">
                         <p class="product-title">Neque ducimus, consequatur iste.</p>
                         <div class="product-price"><span class="currency">$</span><span class="price">34</span></div>
                     </div>
-                    <div class="col-sm-3 product-box box">
+                    <div class="col-sm-6 col-md-3 product-box box">
                         <img class="img-fluid"
-                            src="https://source.unsplash.com/random/260x250/?flower,girl,product,flourist"
+                            src="https://source.unsplash.com/random/270x250/?flower,girl,product,flourist"
                             alt="Featured Product">
                         <p class="product-title">Repellendus nostrum eveniet</p>
                         <div class="product-price"><span class="currency">$</span><span class="price">67</span></div>
                     </div>
-                    <div class="col-sm-3 product-box box">
+                    <div class="col-sm-6 col-md-3 product-box box">
                         <img class="img-fluid"
-                            src="https://source.unsplash.com/random/260x250/?flower,boy,product,flourist"
+                            src="https://source.unsplash.com/random/270x250/?flower,boy,product,flourist"
                             alt="Featured Product">
                         <p class="product-title">Consequatur culpa modi laborum!</p>
                         <div class="product-price"><span class="currency">$</span><span class="price">17</span></div>
                     </div>
-                    <div class="col-sm-3 product-box box">
-                        <img class="img-fluid" src="https://source.unsplash.com/random/260x250/?flower,product,flourist"
+                    <div class="col-sm-6 col-md-3 product-box box">
+                        <img class="img-fluid" src="https://source.unsplash.com/random/270x250/?flower,product,flourist"
                             alt="Featured Product">
                         <p class="product-title">Quasi suscipit aut asperiores</p>
                         <div class="product-price"><span class="currency">$</span><span class="price">29</span></div>
                     </div>
-                    <div class="col-sm-3 product-box box">
-                        <img class="img-fluid" src="https://source.unsplash.com/random/260x250/?rose,sexy,flourist"
+                    <div class="col-sm-6 col-md-3 product-box box">
+                        <img class="img-fluid" src="https://source.unsplash.com/random/270x250/?rose,sexy,flourist"
                             alt="Featured Product">
                         <p class="product-title">Ronsectetur necessitatibus recusandae</p>
                         <div class="product-price"><span class="currency">$</span><span class="price">59.99</span></div>
                     </div>
-                    <div class="col-sm-3 product-box box">
+                    <div class="col-sm-6 col-md-3 product-box box">
                         <img class="img-fluid"
-                            src="https://source.unsplash.com/random/260x250/?flower,beautiful,flourist"
+                            src="https://source.unsplash.com/random/270x250/?flower,beautiful,flourist"
                             alt="Featured Product">
                         <p class="product-title">Modi aliquam animi voluptate</p>
                         <div class="product-price"><span class="currency">$</span><span class="price">73</span></div>
                     </div>
-                    <div class="col-sm-3 product-box box">
-                        <img class="img-fluid" src="https://source.unsplash.com/random/260x250/?flower,pretty,flourist"
+                    <div class="col-sm-6 col-md-3 product-box box">
+                        <img class="img-fluid" src="https://source.unsplash.com/random/270x250/?flower,pretty,flourist"
                             alt="Featured Product">
                         <p class="product-title">Dolore ipsa Explicabo eaque</p>
                         <div class="product-price"><span class="currency">$</span><span class="price">64.99</span></div>
@@ -210,7 +219,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3 box">
+                    <div class="col-sm-6 col-lg-3 box">
                         <img src="resources/img/current-cities-new-york.jpg" alt="New York" class="img-fluid">
                         <h3>New York</h3>
                         <div class="city-feature"><i class="icon-small ion-ios-people"></i> 5000+ Happy eaters</div>
@@ -218,7 +227,7 @@
                         <div class="city-feature"><i class="icon-small ion-social-twitter"></i> <a
                                 href="#">@dflowers_ny</a></div>
                     </div>
-                    <div class="col-sm-3 box">
+                    <div class="col-sm-6 col-lg-3 box">
                         <img src="resources/img/current-cities-chicago.jpg" alt="Chicago" class="img-fluid">
                         <h3>Chicago</h3>
                         <div class="city-feature"><i class="icon-small ion-ios-people"></i> 2500+ Happy eaters</div>
@@ -226,7 +235,7 @@
                         <div class="city-feature"><i class="icon-small ion-social-twitter"></i> <a
                                 href="#">@dflowers_ch</a></div>
                     </div>
-                    <div class="col-sm-3 box">
+                    <div class="col-sm-6 col-lg-3 box">
                         <img src="resources/img/current-cities-seattle.jpg" alt="Seattle" class="img-fluid">
                         <h3>Seattle</h3>
                         <div class="city-feature"><i class="icon-small ion-ios-people"></i> 3200+ Happy eaters</div>
@@ -234,7 +243,7 @@
                         <div class="city-feature"><i class="icon-small ion-social-twitter"></i> <a
                                 href="#">@dflowers_stl</a></div>
                     </div>
-                    <div class="col-sm-3 box">
+                    <div class="col-sm-6 col-lg-3 box">
                         <img src="resources/img/current-cities-los-angeles.jpg" alt="Los angeles" class="img-fluid">
                         <h3>Los angeles</h3>
                         <div class="city-feature"><i class="icon-small ion-ios-people"></i> 6000+ Happy eaters</div>
@@ -306,14 +315,14 @@
                     </div>
                 </div>
                 <div class="row py-2">
-                    <div class="col-md-6 py-3">
+                    <div class="col-lg-6 py-3">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.110879762298!2d-74.20600617121845!3d40.71557553735031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25325138bbe3b%3A0x9a993b5feaed7cda!2s284%20Seymour%20Ave%2C%20Newark%2C%20NJ%2007112%2C%20USA!5e0!3m2!1sen!2s!4v1597810635794!5m2!1sen!2s"
                             width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="1"
                             aria-hidden="false" tabindex="0"></iframe>
                     </div>
-                    <div class="col-md-6">
-                        <form class="p-2 px-md-5" action="#" method="post">
+                    <div class="col-lg-6 py-3">
+                        <form class="px-md-5 px-lg-0 px-xl-5" action="#" method="post">
                             <div class="form-group">
                                 <label for="full-name">Full name</label>
                                 <input required type="text" class="form-control" id="full-name">
@@ -328,8 +337,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
-                                <textarea class="form-control" name="message" id="message" cols="25"
-                                    rows="10"></textarea>
+                                <textarea class="form-control" name="message" id="message" cols="15"></textarea>
                             </div>
                             <a href="#" class="btn btn-full">Submit</a>
                         </form>
@@ -340,10 +348,10 @@
 
 
         <footer>
-            <div class="container">
+            <div class="container-md">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <nav id="navbar-bottom" class="navbar navbar-expand-sm navbar-dark">
+                    <div class="col-sm-6 col-md-8">
+                        <nav id="navbar-bottom" class="navbar navbar-expand-lg navbar-dark">
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
@@ -353,16 +361,20 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-sm-6">
-                        <nav id="navbar-bottom-icons" class="float-right navbar navbar-expand-sm navbar-dark">
+                    <div class="col-sm-6 col-md-4">
+                        <nav id="navbar-bottom-icons" class="float-md-right navbar navbar-expand navbar-dark">
                             <ul class="navbar-nav">
-                                <li class="nav-item"><a href="#" class="nav-link"><i class="icon-small ion-social-twitter"></i></a>
+                                <li class="nav-item"><a href="#" class="nav-link"><i
+                                            class="icon-small ion-social-twitter"></i></a>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link"><i class="icon-small ion-social-facebook"></i></a>
+                                <li class="nav-item"><a href="#" class="nav-link"><i
+                                            class="icon-small ion-social-facebook"></i></a>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link"><i class="icon-small ion-social-snapchat"></i></a>
+                                <li class="nav-item"><a href="#" class="nav-link"><i
+                                            class="icon-small ion-social-snapchat"></i></a>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link"><i class="icon-small ion-social-instagram"></i></a>
+                                <li class="nav-item"><a href="#" class="nav-link"><i
+                                            class="icon-small ion-social-instagram"></i></a>
                                 </li>
                             </ul>
                         </nav>
@@ -375,7 +387,6 @@
                 </div>
             </div>
         </footer>
-
     </body>
 
 </html>

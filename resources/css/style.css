@@ -33,7 +33,6 @@ section {
 	padding: 80px 0;
 }
 
-
 /* ---------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ---------------------------------------------- */
@@ -62,7 +61,6 @@ section {
 /* box */
 .box {
 	margin: 1% 0;
-	padding: 1%;
 }
 .box-text {
 	font-size: 1rem;
@@ -72,6 +70,10 @@ section {
 }
 
 /* buttons */
+button:focus {
+	outline: none;
+	box-shadow: none;
+}
 .btn {
 	display: inline-block;
 	font-weight: 300;
@@ -167,8 +169,9 @@ h3 {
 
 /* top navbar */
 #navbar-top {
+	transition: background-color 0.5s;
 	margin-top: 35px;
-	position: absolute !important;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -185,7 +188,7 @@ li a:visited {
 	padding: 8px 0px !important;
 	font-size: 0.9em;
 	font-weight: 400;
-	color: #fff !important;
+	color: #fff;
 	text-transform: uppercase;
 }
 
@@ -201,9 +204,17 @@ li a:active {
 	letter-spacing: 1px;
 	font-size: 1.5rem;
 	color: #fff;
-	/* border: 1px solid #cccccc; */
 	border: 1px solid #fc427b;
-	padding: 7px 2px;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+#navbar-top .navbar-toggler {
+	border: none;
+}
+#navbar-top .navbar-toggler .navbar-toggler-icon {
+	background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(236,236,236)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	color: #ececec;
 }
 
 /* header content */
@@ -253,11 +264,12 @@ header .hero {
 /* FEATURED PRODUCTS */
 /* ---------------------------------------------- */
 .product-section {
-	background-color: #f5f4f4;
+	background-color: #f4f4f4;
 }
 
 .product-section .product-box {
 	transition: box-shadow 0.2s;
+	padding: 10px;
 }
 
 .product-section .product-box:hover {
@@ -314,7 +326,7 @@ header .hero {
 /* ---------------------------------------------- */
 .section-testimonials {
 	padding: 0;
-	height: 50vh;
+	min-height: 50vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url(img/testimonials-bg.jpg);
 	background-size: cover;
@@ -350,7 +362,6 @@ header .hero {
 	font-weight: 300;
 }
 
-
 /* ---------------------------------------------- */
 /* CONTACT US */
 /* ---------------------------------------------- */
@@ -358,7 +369,6 @@ header .hero {
 	min-height: 50vh;
 	width: 100%;
 }
-
 
 /* ---------------------------------------------- */
 /* FOOTER */
@@ -368,14 +378,17 @@ footer {
 	padding: 50px;
 	background-color: #333333;
 	color: #888888;
-	font-size: .85rem;
+	font-size: 0.85rem;
 }
 
-#navbar-bottom a, #navbar-bottom a:visited {
+
+#navbar-bottom a,
+#navbar-bottom a:visited {
 	color: #888888 !important;
 	transition: color 0.2s;
 }
-#navbar-bottom a:hover, #navbar-bottom a:active {
+#navbar-bottom a:hover,
+#navbar-bottom a:active {
 	color: #ddd !important;
 }
 
@@ -383,10 +396,10 @@ footer {
 	color: #888888 !important;
 	transition: color 0.2s;
 }
-#navbar-bottom-icons .icon-small:hover, #navbar-bottom-icons .icon-small:active {
+#navbar-bottom-icons .icon-small:hover,
+#navbar-bottom-icons .icon-small:active {
 	color: #ddd !important;
 }
-
 
 footer .copyright-msg {
 	margin-top: 30px;
