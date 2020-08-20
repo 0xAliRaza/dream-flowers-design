@@ -1,11 +1,13 @@
-/* ------------------------------------------------------------------------------- */
-/* Note: You will not become the author of this code by removing this comment! 😉 */
-/* 🧑‍💻 Coded by: Ali Raza */
-/* 🌐 https://www.0xAli.com */
-/* Twitter: twitter.com/0xAliRaza */
-/* Github: github.com/0xAliRaza */
-/* Repo url: https://github.com/0xAliRaza/dream-flowers-design */
-/* ------------------------------------------------------------------------------- */
+/*
+	-------------------------------------------------------------------------------
+	Note: You will not become the author of this code by removing this comment! 😉
+	🧑‍💻 Coded by: Ali Raza
+	🌐 https://www.0xAli.com
+	Twitter: twitter.com/0xAliRaza
+	Github: github.com/0xAliRaza
+	Repo url: https://github.com/0xAliRaza/dream-flowers-design
+	-------------------------------------------------------------------------------
+*/
 
 /*
     Primary Color: #FC427B 
@@ -21,6 +23,7 @@ a:hover {
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -79,6 +82,7 @@ section {
 /* buttons */
 button:focus {
 	outline: none;
+	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 .btn {
@@ -86,8 +90,11 @@ button:focus {
 	font-weight: 300;
 	padding: 7px 30px;
 	border-radius: 200px;
+	-webkit-transition: background-color 0.5s, color 0.5s, border 0.5s;
+	-o-transition: background-color 0.5s, color 0.5s, border 0.5s;
 	transition: background-color 0.5s, color 0.5s, border 0.5s;
 	outline: none !important;
+	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
 	margin-right: 15px;
 }
@@ -98,8 +105,11 @@ button:focus {
 	font-weight: 300;
 	padding: 7px 20px;
 	border-radius: 200px;
+	-webkit-transition: background-color 0.5s, color 0.5s, border 0.5s;
+	-o-transition: background-color 0.5s, color 0.5s, border 0.5s;
 	transition: background-color 0.5s, color 0.5s, border 0.5s;
 	outline: none !important;
+	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
 	margin: 0 auto 10px;
 }
@@ -176,6 +186,8 @@ h3 {
 
 /* top navbar */
 #navbar-top {
+	-webkit-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 	margin-top: 35px;
 	position: absolute;
@@ -191,6 +203,8 @@ h3 {
 #navbar-top li a:link,
 li a:visited {
 	border-bottom: 2px solid transparent;
+	-webkit-transition: border-bottom 0.2s;
+	-o-transition: border-bottom 0.2s;
 	transition: border-bottom 0.2s;
 	padding: 8px 0px !important;
 	font-size: 0.9em;
@@ -227,6 +241,16 @@ li a:active {
 /* header content */
 header {
 	height: 100vh;
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0, 0, 0, 0.67)),
+			to(rgba(0, 0, 0, 0.67))
+		),
+		url(img/hero-bg.jpg);
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)),
+		url(img/hero-bg.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)),
 		url(img/hero-bg.jpg);
 	background-position: center;
@@ -237,6 +261,8 @@ header {
 header .hero {
 	position: relative;
 	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -257,12 +283,20 @@ header .hero {
 	overflow: hidden;
 }
 .gallery-box img {
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
 	transform: scale(1.15);
 	opacity: 0.7;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, -webkit-transform 0.5s;
+	-o-transition: transform 0.5s, opacity 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 .gallery-box img:hover {
 	cursor: pointer;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
 	transform: scale(1);
 	opacity: 1;
 }
@@ -275,12 +309,17 @@ header .hero {
 }
 
 .product-section .product-box {
+	-webkit-transition: -webkit-box-shadow 0.2s;
+	transition: -webkit-box-shadow 0.2s;
+	-o-transition: box-shadow 0.2s;
 	transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
 	padding: 10px;
 }
 
 .product-section .product-box:hover {
 	cursor: pointer;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 .product-section .product-box img {
@@ -319,6 +358,8 @@ header .hero {
 	color: #fc427b;
 	text-decoration: none;
 	border-bottom: 1px solid #fc427b;
+	-webkit-transition: color 0.5s, border-bottom 0.5s;
+	-o-transition: color 0.5s, border-bottom 0.5s;
 	transition: color 0.5s, border-bottom 0.5s;
 }
 
@@ -334,6 +375,16 @@ header .hero {
 .section-testimonials {
 	padding: 0;
 	height: 50vh;
+	background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0, 0, 0, 0.7)),
+			to(rgba(0, 0, 0, 0.7))
+		),
+		url(img/testimonials-bg.jpg);
+	background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(img/testimonials-bg.jpg);
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url(img/testimonials-bg.jpg);
 	background-size: cover;
@@ -350,6 +401,8 @@ header .hero {
 #testimonials .carousel-item div {
 	position: absolute;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 	width: 100%;
 	text-align: center;
@@ -391,6 +444,8 @@ footer {
 #navbar-bottom a,
 #navbar-bottom a:visited {
 	color: #888888 !important;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
 	transition: color 0.2s;
 }
 #navbar-bottom a:hover,
@@ -400,6 +455,8 @@ footer {
 
 #navbar-bottom-icons .icon-small {
 	color: #888888 !important;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
 	transition: color 0.2s;
 }
 #navbar-bottom-icons .icon-small:hover,
