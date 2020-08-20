@@ -60,14 +60,20 @@
 
 /* small */
 @media only screen and (max-width: 768px) {
+	section {
+		padding: 60px 0;
+	}
+	.icon-small {
+		font-size: 1.1rem;
+	}
 	.hero-text-box {
 		margin-left: 0px;
 		margin-right: 0px;
 	}
+	
 	#navbar-top {
 		margin: 0;
 	}
-
 	#navbar-top .nav-item {
 		margin: 0;
 		padding: 0 15%;
@@ -75,22 +81,19 @@
 	#navbar-top .nav-item .nav-link {
 		display: inline-block;
 	}
-	section {
-		padding: 60px 0;
-	}
+
 	.current-cities .city-feature {
 		font-size: 0.9rem;
-	}
-	.icon-small {
-		font-size: 1.1rem;
 	}
 }
 
 /* extra small */
 @media only screen and (max-width: 576px) {
-	html, body {
+	html,
+	body {
 		font-size: 18px;
 	}
+
 	.section-gallery {
 		display: none;
 	}
@@ -104,6 +107,7 @@
 	.btn {
 		margin-bottom: 10px;
 	}
+
 	.product-section .product-box {
 		width: initial;
 		height: auto;
@@ -112,6 +116,7 @@
 	.product-section .product-box p {
 		max-width: 270px;
 	}
+
 	.current-cities .box {
 		width: initial;
 		height: auto;
@@ -120,6 +125,11 @@
 	.current-cities .box .city-feature {
 		max-width: 250px;
 	}
+
+	.contact iframe {
+		min-height: 40vh;
+	}
+
 	#navbar-bottom-icons {
 		justify-content: center;
 	}

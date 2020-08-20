@@ -326,7 +326,7 @@ header .hero {
 /* ---------------------------------------------- */
 .section-testimonials {
 	padding: 0;
-	min-height: 50vh;
+	height: 50vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url(img/testimonials-bg.jpg);
 	background-size: cover;
