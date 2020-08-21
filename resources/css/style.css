@@ -126,6 +126,7 @@ button:focus {
 }
 .btn-full:hover,
 .btn-full:active {
+	color: #fff;
 	background-color: #fb2164;
 	border: 1px solid #fb2164;
 }

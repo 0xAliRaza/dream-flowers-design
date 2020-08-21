@@ -70,7 +70,7 @@
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-	
+
 	#navbar-top {
 		margin: 0;
 	}
@@ -80,6 +80,9 @@
 	}
 	#navbar-top .nav-item .nav-link {
 		display: inline-block;
+	}
+	.logo:link, .logo:visited {
+		font-size: 1.1rem;
 	}
 
 	.current-cities .city-feature {
@@ -135,5 +138,17 @@
 	}
 	footer .copyright-msg {
 		margin: 15px 0;
+	}
+}
+
+/* for testimonials section */
+@media only screen and (max-height: 768px) {
+	.section-testimonials {
+		height: 60vh;
+	}
+}
+@media only screen and (max-height: 576px) {
+	.section-testimonials {
+		height: 70vh;
 	}
 }
